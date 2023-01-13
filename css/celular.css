@@ -178,6 +178,67 @@ body h2{
 /*Serviços*/
 
 /*Fotos*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container-slider {
+    display: flex;
+    width: 100%;
+    min-width: 420px;
+    min-height:400px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 405px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 2rem;
+  }
+
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #prev-button {
+    margin-left: 10px;
+    transform: rotate(180deg);
+  }
+
+  #next-button{
+    margin-right: 10px;
+  }
 /*Fotos*/
 
 
@@ -189,7 +250,7 @@ body h2{
 
 .bnt-voltar-text{
     text-align: center;
-    margin: 2rem 0px;
+    margin: 0px 0px 1rem 0px;
 }
 
 .bnt-voltar-text a{

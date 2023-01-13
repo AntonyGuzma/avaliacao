@@ -130,7 +130,7 @@ nav ul li a:hover{
 
 /*Serviços*/
 body h2{
-    font-size: 30pt;
+    font-size: 20pt;
     text-align: center;
     padding-top: 3rem;
     margin-top: 15px;
@@ -179,6 +179,66 @@ body h2{
 /*Serviços*/
 
 /*Fotos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container-slider {
+    display: flex;
+    width: 100%;
+    min-height:50vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 405px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 2rem;
+  }
+  
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #prev-button {
+    margin-left: 10px;
+    transform: rotate(180deg);
+  }
+
+  #next-button{
+    margin-right: 10px;
+  }
 /*Fotos*/
 
 /*Voltar*/
@@ -189,7 +249,7 @@ body h2{
 }
 
 .voltar img {
-    width: 30px;
+    width: 60px;
     height: 30px;
     border: 2px solid #8a2be2;
     padding: 0px 15px 0px 15px;

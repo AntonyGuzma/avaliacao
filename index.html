@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&displau=swap">
-    
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">    
     <link rel="stylesheet" media="(min-width: 480px) and (max-width: 800px)" href="css/tablet.css">
     <link rel="stylesheet" media="screen" href="css/padrao.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/celular.css" />
-
+    
     <title>Document</title>
 </head>
 <body>
@@ -65,18 +64,21 @@
         </div>
     </section>
     
-
-    <section id="fotos" data-aos="fade-up">
-        <h2>Fotos</h2>
-        <img class="foto" src="img/ceu.jpg" alt="ceu">
-        <img class="foto" src="img/grama.jpg" alt="grama">
-        <img class="foto" src="img/montanha.jpg" alt="montanha">
-        <img class="foto" src="img/mar.jpg" alt="mar">
-        <img class="foto" src="img/arvores.jpg" alt="arvores">
-        <img class="foto" src="img/ponte.jpg" alt="ponte">
+    <h2>Fotos</h2>
+    <section id="fotos" class="container-slider" data-aos="fade-up">
+        <button id="prev-button"><img src="img/arrow.png" alt="prev-button"></button>
+        <div class="container-images">
+          <img src="img/grama.jpg" alt="grama" class="slider on">
+          <img src="img/ceu.jpg" alt="ceu" class="slider">
+          <img src="img/arvores.jpg" alt="arvore" class="slider">
+          <img src="img/mar.jpg" alt="mar" class="slider">
+          <img src="img/montanha.jpg" alt="montanha" class="slider">
+          <img src="img/ponte.jpg" alt="montanha" class="slider">
+        </div>
+        <button id="next-button"><img src="img/arrow.png" alt="next-button"></button>
     </section>
 
-    <div class="btn-voltar" data-aos="fade-up">
+    <div class="btn-voltar imgvoltar" data-aos="fade-up">
         <a class="voltar" href="#topo"><img src="img/topo.png" alt="voltar"></a>
     </div>
 
@@ -104,7 +106,9 @@
         <p>&copy; Desenvolvido por I7 - Programação Web</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script src="js/script.js"></script>
+    
     <script>
         AOS.init();
     </script>

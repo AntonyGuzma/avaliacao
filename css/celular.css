@@ -64,6 +64,7 @@ nav ul li a:hover{
     height: auto;
     margin-top: 2%;
     padding-top: 3rem;
+    min-width: 400px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -74,6 +75,7 @@ nav ul li a:hover{
 #topo h1{
     font-size: 20pt;
     margin-bottom: rem;
+    min-width: 400px;
 }
 
 #topo p{
@@ -81,6 +83,7 @@ nav ul li a:hover{
     padding: 10px;
     font-size: 13pt;
     text-align: justify;
+    min-width: 400px;
 }
 
 #topo a{
@@ -97,10 +100,12 @@ nav ul li a:hover{
 /*Sobre*/
 #sobre h2{
     font-size: 20pt;
+    min-width: 400px;
 }
 
 #sobre p{
     width: 80%;
+    min-width: 400px;
     padding: 13px;
     font-size: 13pt;
     text-align: center;
@@ -135,6 +140,7 @@ body h2{
     text-align: center;
     padding-top: 3rem;
     margin-top: 15px;
+    min-width: 400px;
 }
 
 .cards{
@@ -142,6 +148,7 @@ body h2{
     grid-template-rows: 25% 25% 25% 25%; /*Divide em duas colunas*/
     gap: 8px;
     padding: 10px;
+    min-width: 400px;
     margin: auto;
 }
 
@@ -188,7 +195,7 @@ body h2{
   .container-slider {
     display: flex;
     width: 100%;
-    min-width: 420px;
+    min-width: 400px;
     min-height:400px;
     align-items: center;
     justify-content: center;
@@ -199,18 +206,18 @@ body h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 400px;
     height: 405px;
     overflow: hidden;
     border-radius: 10px;
-    margin: 2rem;
+    margin: 0px;
   }
 
   .slider {
     opacity: 0;
     transition: opacity .2s;
     position: absolute;
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
   }
   
@@ -236,9 +243,6 @@ body h2{
     transform: rotate(180deg);
   }
 
-  #next-button{
-    margin-right: 10px;
-  }
 /*Fotos*/
 
 
@@ -251,6 +255,7 @@ body h2{
 .bnt-voltar-text{
     text-align: center;
     margin: 0px 0px 1rem 0px;
+    min-width: 400px;
 }
 
 .bnt-voltar-text a{
@@ -275,7 +280,7 @@ body h2{
 .contato{
     background-color: #000000;
     width: 100%;
-    min-width: 372px;
+    min-width: 400px;
     height: 10%;
     color: #8a2be2;
     display: grid;
@@ -326,6 +331,7 @@ body h2{
 footer{
     height: 40px;
     width: auto;
+    min-width: 400px;
     background-color: #000000;
     color: #8a2be2;
     font-size: 7pt;

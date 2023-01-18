@@ -47,12 +47,18 @@ currentSlide = currentSlide - 1
 
 //menu hamburguer
 var ul = document.querySelector('nav ul');
+var opcoes = document.querySelector('ul');
 var menuBtn = document.querySelector('.menu-btn i');
 
 function menuShow() {
     if (ul.classList.contains('open')) {
         ul.classList.remove('open');
+        console.log(opcoes)
     }else{
         ul.classList.add('open');
     }
 }
+
+opcoes.onclick = function () {
+  ul.classList.remove('open');
+};

@@ -28,6 +28,10 @@ nav{
     flex-wrap: wrap;
 }
 
+.menu-btn{
+    display: none;
+}
+
 div.logo{
    color: #ffffff;
    font-size: 15pt;
@@ -318,8 +322,8 @@ img.foto{
 }
 
 .dir img{
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     margin-right: -5px;
     border: 1px solid #8a2be2;
     padding: 5px;

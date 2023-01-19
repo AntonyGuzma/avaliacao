@@ -37,13 +37,10 @@ function prevSlider() {
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
 
-
-console.log(slider)
-
+//console.log(slider)
 
 currentSlide = currentSlide + 1
 currentSlide = currentSlide - 1
-
 
 //menu hamburguer
 var ul = document.querySelector('nav ul');
